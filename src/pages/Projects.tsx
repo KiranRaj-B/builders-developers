@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Ruler, Building } from 'lucide-react';
 
 const Projects = () => {

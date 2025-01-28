@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Building, Users, CheckCircle, Clock } from 'lucide-react';
 
 const About = () => {

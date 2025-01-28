@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
