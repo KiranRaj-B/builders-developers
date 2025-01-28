@@ -10,7 +10,7 @@ const About = () => {
       description: "Commitment to excellence in every project"
     },
     {
-      icon: <Users size={40} className="text-black mb-4" />,
+      icon: <Users size={40} className="text-black mb-8" />,
       value: "1000+",
       label: "Satisfied Clients",
       description: "Trust and satisfaction guaranteed"
@@ -23,7 +23,7 @@ const About = () => {
     },
     {
       icon: <Clock size={40} className="text-black mb-4" />,
-      value: "10+",
+      value: "20+",
       label: "Years Experience",
       description: "Industry expertise and knowledge"
     }
@@ -32,14 +32,13 @@ const About = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[40vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=2000"
             alt="About Us Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover filter brightness-50"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
@@ -56,7 +55,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6">
-                Founded in 2014, BuildersCo has established itself as a leading force in the construction and development industry. Our journey began with a simple yet powerful vision: to transform spaces into lasting landmarks of excellence.
+                Founded in 2005, Tarade Builders & Developers has established itself as a leading force in the construction and development industry. Our journey began with a simple yet powerful vision: to transform spaces into lasting landmarks of excellence.
               </p>
               <p className="text-gray-600 mb-6">
                 Today, we stand proud as a company that has not just built structures, but has created communities, shaped skylines, and influenced the very way people live and work.
@@ -102,11 +101,15 @@ const About = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Quick Facts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                {stat.icon}
-                <div className="text-4xl font-bold text-black mb-2">{stat.value}</div>
-                <div className="text-lg font-semibold text-gray-900 mb-2">{stat.label}</div>
-                <p className="text-gray-600">{stat.description}</p>
+              <div key={index} className="text-center p-10 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex justify-center mb-4">
+                  <div className="flex items-center justify-center w-16 h-10 rounded-full">
+                    {stat.icon}
+                  </div>
+                  </div>
+                  <div className="text-4xl font-bold text-black mb-2">{stat.value}</div>
+                  <div className="text-lg font-semibold text-gray-900 mb-2">{stat.label}</div>
+                  <p className="text-gray-600">{stat.description}</p>
               </div>
             ))}
           </div>

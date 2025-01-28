@@ -33,7 +33,7 @@ const Home = () => {
           <img
             src="/hero_image.png"
             alt="Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover filter brightness-60"
           />
 
         </div>
@@ -41,7 +41,7 @@ const Home = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Building Dreams Into Reality</h1>
             <p className="text-xl md:text-2xl mb-8">Excellence in Construction & Development</p>
-            <button className="bg-white text-black px-8 py-3 rounded-md font-medium hover:bg-green-700 transition-colors">
+            <button className="bg-white text-black px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
               Explore Projects
             </button>
           </div>
@@ -50,19 +50,28 @@ const Home = () => {
 
       {/* About Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our Company</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              With over a decade of experience in construction and development, we've built our reputation on quality,
-              innovation, and customer satisfaction. Our commitment to excellence drives every project we undertake.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col lg:flex-row items-center lg:space-x-8">
+      {/* Left-side image */}
+      <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Office" className="w-full h-auto rounded-lg shadow-lg" />
+      </div>
+
+      {/* Text Content */}
+      <div className="lg:w-1/2 text-center lg:text-left">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our Company</h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto lg:mx-0">
+          With over a decade of experience in construction and development, we've built our reputation on quality, innovation, and customer satisfaction. Our commitment to excellence drives every project we undertake. From concept to completion, we ensure meticulous attention to detail at every stage. Our team leverages cutting-edge technologies to deliver sustainable and efficient solutions. Partner with us to bring your vision to life with confidence and expertise.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Projects Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-5 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Latest Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,7 +113,7 @@ const Home = () => {
       See Our Work in Action
     </h2>
     {/* Responsive iframe wrapper */}
-    <div className="relative overflow-hidden rounded-lg" style={{ paddingTop: '46.25%' }}>
+    <div className="relative overflow-hidden rounded-lg" style={{ paddingTop: '56.25%' }}>
       <iframe
         className="absolute top-0 left-0 w-full h-full"
         src="https://www.youtube.com/embed/nwLQ3s3Fwtk?si=dCG_cfKdXC_U9Uty"
@@ -117,6 +126,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
     </div>
   );

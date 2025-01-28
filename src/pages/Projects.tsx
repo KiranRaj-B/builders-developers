@@ -88,14 +88,14 @@ const Projects = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[40vh]">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&q=80&w=2000"
             alt="Projects Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover filter brightness-50"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">

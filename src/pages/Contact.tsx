@@ -51,14 +51,13 @@ const Contact = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[40vh]">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000"
+            src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&q=80&w=2000"
             alt="Contact Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover filter brightness-50"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
@@ -178,30 +177,29 @@ const Contact = () => {
                   <MapPin className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">123 Construction Ave, Building City, BC 12345</p>
+                    <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Mail className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">info@buildersco.com</p>
+                    <p className="text-gray-600">taradedevelopers@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Phone className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+1 234 567 8900</p>
+                    <p className="text-gray-600">+91 9611929845</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Business Hours</h4>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">Sunday: 10:00 AM - 2:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -213,7 +211,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1645564756832!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.34502572103!2d74.9976658!3d15.4630869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1738071487306!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
