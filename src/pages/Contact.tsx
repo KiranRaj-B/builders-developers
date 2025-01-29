@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    full_name: '',
     email: '',
     phone: '',
     subject: '',
@@ -20,15 +20,24 @@ const Contact = () => {
     setErrorMessage('');
 
     try {
+      // Insert form data into the 'contact_forms' table in Supabase
       const { error } = await supabase
         .from('contact_forms')
-        .insert([formData]);
+        .insert([
+          {
+            full_name: formData.full_name, // Changed to match table column name
+            email: formData.email,
+            phone: formData.phone,
+            subject: formData.subject,
+            message: formData.message,
+          },
+        ]);
 
       if (error) throw error;
 
       setStatus('success');
       setFormData({
-        name: '',
+        full_name: '',
         email: '',
         phone: '',
         subject: '',
@@ -44,20 +53,21 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[40vh]">
+      <section className="relative h-[60vh]">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&q=80&w=2000"
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000"
             alt="Contact Hero"
-            className="w-full h-full object-cover filter brightness-50"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
@@ -86,14 +96,14 @@ const Contact = () => {
                   )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="full_name" className="block text-sm font-medium text-gray-700 mb-1">
                         Full Name
                       </label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
+                        id="full_name"
+                        name="full_name"
+                        value={formData.full_name}
                         onChange={handleChange}
                         className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
                         required
@@ -126,7 +136,6 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
-                        required
                       />
                     </div>
                     <div>
@@ -177,29 +186,30 @@ const Contact = () => {
                   <MapPin className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
+                    <p className="text-gray-600">123 Construction Ave, Building City, BC 12345</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Mail className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">taradedevelopers@gmail.com</p>
+                    <p className="text-gray-600">info@buildersco.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Phone className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+91 9611929845</p>
+                    <p className="text-gray-600">+1 234 567 8900</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Business Hours</h4>
-                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Sunday: 10:00 AM - 2:00 PM</p>
+                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                    <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
@@ -211,13 +221,11 @@ const Contact = () => {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.34502572103!2d74.9976658!3d15.4630869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1738071487306!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8d17f75f1%3A0x40cfa4fd3f73e6d7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1639383633650!5m2!1sen!2sus"
           width="100%"
           height="100%"
           style={{ border: 0 }}
-          allowFullScreen
           loading="lazy"
-          title="Office Location"
         ></iframe>
       </section>
     </div>

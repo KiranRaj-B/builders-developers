@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Briefcase, MapPin, Mail, Phone } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const Careers = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    full_name: '',
     email: '',
     phone: '',
     position: '',
-    message: '',
+    cover_letter: '',
   });
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -59,11 +59,11 @@ const Careers = () => {
 
       setStatus('success');
       setFormData({
-        name: '',
+        full_name: '',
         email: '',
         phone: '',
         position: '',
-        message: '',
+        cover_letter: '',
       });
     } catch (error) {
       console.error('Error submitting application:', error);
@@ -82,14 +82,14 @@ const Careers = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[40vh]">
+      <section className="relative h-[60vh]">
         <div className="absolute inset-0">
           <img
-            src="/join_our_team.png"
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2000"
             alt="Careers Hero"
-            className="w-full h-full object-cover filter brightness-50"
+            className="w-full h-full object-cover"
           />
-      
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
@@ -156,8 +156,8 @@ const Careers = () => {
                       <input
                         type="text"
                         id="name"
-                        name="name"
-                        value={formData.name}
+                        name="full_name"
+                        value={formData.full_name}
                         onChange={handleChange}
                         className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
                         required
@@ -220,8 +220,8 @@ const Careers = () => {
                     </label>
                     <textarea
                       id="message"
-                      name="message"
-                      value={formData.message}
+                      name="cover_letter"
+                      value={formData.cover_letter}
                       onChange={handleChange}
                       rows={6}
                       className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
@@ -244,16 +244,16 @@ const Careers = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="text-black" size={30} />
-                  <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
+                  <MapPin className="text-black" size={20} />
+                  <p className="text-gray-600">123 Construction Ave, Building City, BC 12345</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-black" size={20} />
-                  <p className="text-gray-600">taradedevelopers@gmail.com</p>
+                  <p className="text-gray-600">careers@buildersco.com</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="text-black" size={20} />
-                  <p className="text-gray-600">+91 9611929845</p>
+                  <p className="text-gray-600">+1 234 567 8900</p>
                 </div>
               </div>
             </div>
