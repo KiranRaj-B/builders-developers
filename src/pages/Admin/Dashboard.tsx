@@ -110,13 +110,13 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="bg-black text-white px-4 py-4">
+    <div className="min-h-screen">
+      <nav className="bg-blue-500 text-black px-4 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold">Admin Dashboard</h1>
           <button
           onClick={() => signOut()}
-          className="px-4 py-2 bg-white text-black rounded hover:bg-gray-200 transition-colors"
+          className="px-4 py-2 bg-black text-white rounded hover:bg-red-700 transition-colors"
           >
           Sign Out
           </button>
