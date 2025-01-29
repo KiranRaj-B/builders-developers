@@ -221,7 +221,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8d17f75f1%3A0x40cfa4fd3f73e6d7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1639383633650!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.34502572103!2d74.9976658!3d15.4630869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1738154090181!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
