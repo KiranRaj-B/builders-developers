@@ -82,14 +82,13 @@ const Careers = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[40vh]">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2000"
+            src="/contact-us-banner-edited.jpeg"
             alt="Careers Hero"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover filter brightness-40"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
@@ -245,15 +244,15 @@ const Careers = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <MapPin className="text-black" size={20} />
-                  <p className="text-gray-600">123 Construction Ave, Building City, BC 12345</p>
+                  <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-black" size={20} />
-                  <p className="text-gray-600">careers@buildersco.com</p>
+                  <p className="text-gray-600">taradedevelopers@gmail.com</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="text-black" size={20} />
-                  <p className="text-gray-600">+1 234 567 8900</p>
+                  <p className="text-gray-600">9611929845</p>
                 </div>
               </div>
             </div>
