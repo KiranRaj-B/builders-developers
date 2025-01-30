@@ -44,7 +44,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
             <p className="text-gray-400 mb-4">
-            Tarade Builders & Developers are the leading construction and development company committed to creating exceptional spaces that inspire and endure.
+             Builders & Developers are the leading construction and development company committed to creating exceptional spaces that inspire and endure.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-gray-400 transition-colors">
@@ -61,11 +61,11 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Tarade Builders & Developers</h3>
+            <h3 className="text-xl font-bold mb-4">Builders & Developers</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="mt-1" size={20} />
-                <p className="text-gray-400">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
+                <p className="text-gray-400">Builders and Developers, XYZ Area, XYZ District 000000</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} />
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} />
-                <p className="text-gray-400">taradedevelopers@gmail.com</p>
+                <p className="text-gray-400">buildersdevelopers@gmail.com</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Tarade Builders. All rights reserved.
+            © {new Date().getFullYear()} Builders & Developers. All rights reserved.
           </p>
           <p className="text-gray-400 mt-2">
             Designed and developed by{' '}

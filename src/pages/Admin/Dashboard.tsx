@@ -137,7 +137,7 @@ const Dashboard = () => {
                 className={`px-6 py-4 text-lg font-bold w-full sm:w-auto ${
                   activeTab === 'contacts'
                     ? 'bg-green-600 text-white'
-                    : 'text-gray-500 hover:text-black'
+                    : 'text-gray-800 hover:text-black'
                 }`}
               >
                 Contact Forms ({contacts.length})
@@ -147,7 +147,7 @@ const Dashboard = () => {
                 className={`px-6 py-4 text-lg font-bold w-full sm:w-auto ${
                   activeTab === 'applications'
                     ? 'bg-green-600 text-white'
-                    : 'text-gray-500 hover:text-black'
+                    : 'text-gray-800 hover:text-black'
                 }`}
               >
                 Job Applications ({applications.length})

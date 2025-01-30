@@ -186,14 +186,14 @@ const Contact = () => {
                   <MapPin className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
+                    <p className="text-gray-600">Builders and Developers, XYZ Area, XYZ District 000000</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Mail className="text-black mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">taradedevelopers@gmail.com</p>
+                    <p className="text-gray-600">buildersdevelopers@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -221,7 +221,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="h-[400px] w-full bg-gray-200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.34502572103!2d74.9976658!3d15.4630869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1738154090181!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15284.056085807899!2d75.05073488635404!3d16.726152193745573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc729f61aebbfb3%3A0xd10a23aaae80ef67!2sAthani%2C%20Karnataka%20591304!5e0!3m2!1sen!2sin!4v1738215091642!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

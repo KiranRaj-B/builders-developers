@@ -43,7 +43,7 @@ const About = () => {
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Story</h1>
-            <p className="text-xl md:text-2xl">Building Excellence Since 2014</p>
+            <p className="text-xl md:text-2xl">Building Excellence Since 2005</p>
           </div>
         </div>
       </section>
@@ -55,7 +55,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6">
-                Founded in 2005, Tarade Builders & Developers has established itself as a leading force in the construction and development industry. Our journey began with a simple yet powerful vision: to transform spaces into lasting landmarks of excellence.
+                Founded in 2005, Builders & Developers has established itself as a leading force in the construction and development industry. Our journey began with a simple yet powerful vision: to transform spaces into lasting landmarks of excellence.
               </p>
               <p className="text-gray-600 mb-6">
                 Today, we stand proud as a company that has not just built structures, but has created communities, shaped skylines, and influenced the very way people live and work.

@@ -93,7 +93,7 @@ const Careers = () => {
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Join Our Team</h1>
-            <p className="text-xl md:text-2xl">Build Your Career with BuildersCo</p>
+            <p className="text-xl md:text-2xl">Build Your Career with Builders & Developers</p>
           </div>
         </div>
       </section>
@@ -243,12 +243,12 @@ const Careers = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="text-black" size={20} />
-                  <p className="text-gray-600">Tarade Builders and Developers, Gandhinagar, Dharwad 580004</p>
+                  <MapPin className="text-black" size={25} />
+                  <p className="text-gray-600">Builders and Developers, Gandhinagar, Dharwad 580004</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-black" size={20} />
-                  <p className="text-gray-600">taradedevelopers@gmail.com</p>
+                  <p className="text-gray-600">buildersdevelopers@gmail.com</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="text-black" size={20} />
